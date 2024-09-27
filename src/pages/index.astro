@@ -1,122 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- TODO: find out the reason prettier not working -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page Header</title>
-    <link rel="stylesheet" href="/src/styles/global.css">
+    <link rel="stylesheet" href="/styles/global.css">
+    <!-- TODO: CONVERT THE FONT TO LOCAL FONT-->
     <link
       href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&display=swap"
       rel="stylesheet"
     />
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        text-decoration: none;
-      }
 
-/* Hide scrollbar for WebKit browsers (Chrome, Safari, etc.) */
-html, body {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
-}
-
-html::-webkit-scrollbar,
-body::-webkit-scrollbar {
-   display: none; /* Chrome, Safari, Opera */
-}
-
-
-      body {
-        font-family: "Instrument Sans", sans-serif;
-        background-color: #000000;
-        color: white;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .site-header {
-        padding: 20px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 30px;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-      }
-
-
-      .header-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 90%;
-        max-width: 1130px;
-        padding: 10px 30px;
-        border: 1px solid #151515;
-        border-radius: 20px;
-        background-color: #1111116e;
-        backdrop-filter: blur(6px);
-        -webkit-backdrop-filter: blur(6px);
-        gap: 20px;
-      }
-
-      .logo a {
-        text-decoration: none;
-        font-size: 1.2em;
-        font-weight: bold;
-        color: #ffffff;
-      }
-
-      .nav-links {
-        display: flex;
-        gap: 15px;
-      }
-
-      .nav-links a {
-        text-decoration: none;
-        color: #ffffff;
-        font-size: 0.9em;
-        font-weight: normal;
-      }
-
-      .header-buttons {
-        display: flex;
-        gap: 10px;
-        margin-right: -20px;
-      }
 
       .btn {
-        padding: 8px 15px;
-        border-radius: 20px;
-        text-decoration: none;
-        font-size: 0.9em;
-        cursor: pointer;
         transition: background-color 0.3s;
-      }
-
-      .login-btn {
-        background-color: transparent;
-        color: #6074DD;
-        border: 2px solid #91a3ff;
-      }
-
-      .signup-btn {
-        background-color: #6074DD;
-        border: 2px solid #91a3ff;
-        color: white;
-      }
-
-      .login-btn:hover,
-      .signup-btn:hover {
-        opacity: 0.8;
       }
 
       .promo-section {
@@ -671,22 +571,20 @@ body::-webkit-scrollbar {
     </style>
 </head>
 
-<body>
-
- 
-    <header class="site-header">
-      <div class="header-container">
+<body class='bg-[#000000] flex items-center flex-col  min-h-screen text-white'>
+    <header class="py-5 flex-center w-full mb-[30px] sticky top-0 z-[1000] site-header">
+      <div class="flex items-center justify-between w-[90%] max-w-[1130px] py-[10px] px-[30px] border border-[#151515] rounded-[20px] bg-[#1111116e] backdrop-blur gap-5 header-container">
         <div class="logo">
-          <a href="#">twiz.lol</a>
+          <a href="#" class='text-xl font-bold text-white no-underline'>twiz.lol</a>
         </div>
-        <nav class="nav-links">
-          <a href="#">Pricings</a>
-          <a href="#">Features</a>
-          <a href="#">Discord</a>
+        <nav class="flex gap-[15px] nav-links">
+          <a href="#" class='text-white no-underline text-[0.9rem]'>Pricings</a>
+          <a href="#" class='no-underline text-white text-[0.9rem]'>Features</a>
+          <a href="#" class='no-underline text-white text-[0.9rem]'>Discord</a>
         </nav>
-        <div class="header-buttons">
-          <a href="#" class="btn login-btn">Login</a>
-          <a href="#" class="btn signup-btn">Sign Up</a>
+        <div class="flex gap-[10px] -mr-5 header-buttons">
+          <a href="#" class="py-2 px-[15px] no-underline font-[0.9rem] cursor-pointer transition-colors bg-transparent text-[#6074DD] border-[2px] border-[#91a3ff] hover:opacity-[0.8] btn login-btn">Login</a>
+          <a href="#" class="py-2 px-[15px] no-underline font-[0.9rem] cursor-pointer transistion-colors bg-[#6074DD] text-white border-[2px] border-[#91a3ff] hover:opacity-[0.8] btn signup-btn  ">Sign Up</a>
         </div>
         <div class="hamburger" onclick="toggleMenu()">
           <div></div>
@@ -696,7 +594,7 @@ body::-webkit-scrollbar {
       </div>
     </header>
 
-    <section class="promo-section">
+    <section class="promo-section w-[90%] max-w-[1130px] relative text-white">
       <h1>
         Your bio link tool, <br /><span>streamlined and simple.</span>
       </h1>
