@@ -19,134 +19,19 @@
         transition: background-color 0.3s;
       }
 
-      .promo-section {
-        width: 90%;
-        position: relative;
-        color: white;
-        box-sizing: border-box;
-        max-width: 1130px;
-        margin: 157px auto 310px;
-      }
 
       .promo-section h1 {
-        font-size: 3em;
-        font-weight: 300;
         background-image: linear-gradient(93deg, rgba(255, 255, 255, 0.8) 0%, rgb(255, 255, 255) 43.2432%, rgba(255, 255, 255, 0) 140.921%);
         -webkit-background-clip: text;
-        color: transparent;
-        line-height: 1.2em;
-        text-align: left;
-        margin-bottom: 20px;
-        max-width: 600px;
       }
 
       .promo-section h1 span {
-        font-weight: 600;
         background-image: linear-gradient(210deg, rgb(0 0 0 / 67%) -92.2927%, rgb(96 116 221) 100%);
         -webkit-background-clip: text;
-        color: transparent;
-      }
-
-      .promo-section p {
-        font-size: 1.1em;
-        color: #a7a7a7;
-        margin-bottom: 40px;
-        max-width: 600px;
-        text-align: left;
-      }
-
-      .promo-section .btn {
-        padding: 15px 40px;
-        font-size: 1em;
-        border-radius: 30px;
-        margin-right: 15px;
-      }
-
-      .promo-section .btn.explore-links {
-        background-color: transparent;
-        border: 2px solid rgb(54, 55, 58);
-        color: #79797a;
-      }
-
-      .promo-section .btn.get-started {
-        background-color: #6074DD;
-        border: 2px solid #91a3ff;
-        color: white;
-      }
-
-      .rating {
-        position: absolute;
-        bottom: -20px;
-        right: 0;
-        display: flex;
-        align-items: center;
-      }
-
-      .rating-number {
-        font-size: 3em;
-        color: #6074DD;
-        margin-right: 20px;
-        font-weight: bold;
-      }
-
-      .rating-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .rating-stars {
-        display: flex;
-        color: #ffd700;
-        font-size: 1.5em;
-        gap: 14px;
-        margin-bottom: 5px;
-      }
-
-      .rating-text {
-        color: #6074DD;
-        font-size: 1em;
       }
 
       .marquee-container {
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-        padding: 10px 0;
         background: linear-gradient(to bottom right, #22222200, rgb(96 116 221 / 11%));
-        border: 2px solid #0c0e1b;
-        border-radius: 15px;
-        max-width: 1130px;
-        margin-top: 40px;
-      }
-
-      .marquee-content {
-        display: flex;
-        gap: 30px;
-        padding: 10px 20px;
-        width: fit-content;
-        white-space: nowrap;
-      }
-
-      .marquee-item {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-size: 1.1em;
-        color: #a7a7a7;
-      }
-
-      .hamburger {
-        display: none;
-        cursor: pointer;
-        flex-direction: column;
-        gap: 5px;
-      }
-
-      .hamburger div {
-        width: 25px;
-        height: 3px;
-        background-color: #6074DD;
       }
 
       @keyframes scroll {
@@ -584,46 +469,46 @@
         </nav>
         <div class="flex gap-[10px] -mr-5 header-buttons">
           <a href="#" class="py-2 px-[15px] no-underline font-[0.9rem] cursor-pointer transition-colors bg-transparent text-[#6074DD] border-[2px] border-[#91a3ff] hover:opacity-[0.8] btn login-btn">Login</a>
-          <a href="#" class="py-2 px-[15px] no-underline font-[0.9rem] cursor-pointer transistion-colors bg-[#6074DD] text-white border-[2px] border-[#91a3ff] hover:opacity-[0.8] btn signup-btn  ">Sign Up</a>
+          <a href="#" class="py-2 px-[15px] no-underline font-[0.9rem] cursor-pointer transistion-colors bg-[#6074DD] text-white border-[2px] border-[#91a3ff] hover:opacity-[0.8] btn signup-btn">Sign Up</a>
         </div>
-        <div class="hamburger" onclick="toggleMenu()">
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="hamburger hidden cursor-pointer flex-col gap-[5px]" onclick="toggleMenu()">
+          <div class="w-6 h-[3px] bg-[#6074dd]"></div>
+          <div class="w-6 h-[3px] bg-[#6074dd]"></div>
+          <div class="w-6 h-[3px] bg-[#6074dd]"></div>
         </div>
       </div>
     </header>
 
-    <section class="promo-section w-[90%] max-w-[1130px] relative text-white">
-      <h1>
-        Your bio link tool, <br /><span>streamlined and simple.</span>
+    <section class="promo-section w-[90%] max-w-[1130px] relative text-white mt-[157px] mx-auto mb-[310px]">
+      <h1 class='text-5xl font-light text-transparent line-height-[1.2rem] text-left mb-5 max-width-[600px]'>
+        Your bio link tool, <br /><span class='font-medium text-transparent '>streamlined and simple.</span>
       </h1>
-      <p>
+      <p class="text-[1.1rem] color-[#a7a7a7] mb-10  max-w-[600px] text-left">
         Create and manage professional bio links.
       </p>
       <div>
-        <a href="#" class="btn explore-links">EXPLORE LINKS</a>
-        <a href="#" class="btn get-started">GET STARTED</a>
+        <a href="#" class="btn py-4 px-10 text-base rounded-[30px] mr-[15px]  explore-links bg-transparent border-2 border-[#36373a]">EXPLORE LINKS</a>
+        <a href="#" class="btn py-4 px-10 text-base rounded-[30px] mr-[15px]  get-started bg-[#6074DD] border-2 border-[#91a3ff] text-white">GET STARTED</a>
       </div>
 
-      <div class="rating">
-        <div class="rating-number">4.8/5</div>
-        <div class="rating-wrapper">
-          <div class="rating-stars">
+      <div class="rating absolute -bottom-5    right-0 flex items-center">
+        <div class="rating-number text-5xl text-[#6074DD] mr-5 font-bold">4.8/5</div>
+        <div class="rating-wrapper flex flex-col items-start">
+          <div class="rating-stars flex text-[#ffd700] text-2xl gap-4 mb-1">
             <span>★</span>
             <span>★</span>
             <span>★</span>
             <span>★</span>
             <span>★</span>
           </div>
-          <div class="rating-text">Rated by top agencies</div>
+          <div class="rating-text text-[#6074DD] text-base">Rated by top agencies</div>
         </div>
       </div>
     </section>
 
-    <div class="marquee-container">
-      <div class="marquee-content scroll">
-        <div class="marquee-item">
+    <div class="marquee-container w-full overflow-hidden relative py-[10px] px-0 border-2 border-[#0c0e1b] rounded-[15px] max-w-[1130px] mt-10">
+      <div class="marquee-content scroll flex gap-[30px] py-[10px] px-5 w-fit whitespace-nowrap">
+        <div class="marquee-item flex items-center gap-[10px] text-[1.1rem] text-[#a7a7a7]">
           <span
             class="iconify"
             data-icon="fluent:link-12-regular"
@@ -632,7 +517,7 @@
           ></span>
           Easy Bio Links
         </div>
-        <div class="marquee-item">
+        <div class="marquee-item flex items-center gap-[10px] text-[1.1rem] text-[#a7a7a7]">
           <span
             class="iconify"
             data-icon="fluent:data-pie-24-filled"
@@ -641,7 +526,7 @@
           ></span>
           Advanced Analytics
         </div>
-        <div class="marquee-item">
+        <div class="marquee-item flex items-center gap-[10px] text-[1.1rem] text-[#a7a7a7]">
           <span
             class="iconify"
             data-icon="carbon:link"
@@ -650,7 +535,7 @@
           ></span>
           Unlimited Links
         </div>
-        <div class="marquee-item">
+        <div class="marquee-item flex items-center gap-[10px] text-[1.1rem] text-[#a7a7a7]">
           <span
             class="iconify"
             data-icon="fa-solid:globe"
@@ -659,7 +544,7 @@
           ></span>
           Custom Domains
         </div>
-        <div class="marquee-item">
+        <div class="marquee-item flex items-center gap-[10px] text-[1.1rem] text-[#a7a7a7]">
           <span
             class="iconify"
             data-icon="mdi:social-shatabler:socialre"
