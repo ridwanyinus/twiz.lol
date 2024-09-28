@@ -52,49 +52,22 @@
       }
 
       .why-us {
-        width: 90%;
-        max-width: 1130px;
-        margin: 40px auto;
-        text-align: left;
         background-image: linear-gradient(96deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 148.925%);
         -webkit-background-clip: text;
-        color: #6074DD;
-      }
-
-      .why-us-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 30px;
       }
 
       .why-us-title {
-        font-size: 2em;
-        font-weight: 600;
         background-image: linear-gradient(254deg, rgb(0 0 0) -92.2927%, rgb(186 186 186) 100%);
         -webkit-background-clip: text;
-        color: transparent;
       }
 
       .why-us-description {
-        font-size: 1.1em;
         background-image: linear-gradient(210deg, rgb(0 0 0 / 67%) -92.2927%, rgb(96 116 221) 100%);
         -webkit-background-clip: text;
-        color: transparent;
-      }
-
-      .boxes-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
       }
 
       .box {
         background: linear-gradient(to bottom right, #22222200, rgb(12 12 12 / 50%));
-        border: 2px solid #070707;
-        border-radius: 10px;
-        padding: 20px;
-        position: relative;
       }
 
       .box-text {
@@ -556,36 +529,37 @@
       </div>
     </div>
 
-    <section class="why-us">
-      <div class="why-us-container">
-        <h2 class="why-us-title">Why Us?</h2>
-        <p class="why-us-description">We'll Give You Reasons</p>
+    <section class="why-us w-[90%] max-w-[1130px] my-10 mx-auto text-left text-[#6074dd]">
+      <div class="why-us-container flex justify-between items-center mb-[30px]">
+        <h2 class="why-us-title text-[2rem] font-semibold text-transparent">Why Us?</h2>
+        <p class="why-us-description text-[1.1rem] text-transparent">We'll Give You Reasons</p>
       </div>
 
-      <div class="boxes-container">
-        <div class="box">
+      <div class="boxes-container grid grid-cols-3 gap-5">
+        <div class="box border-[#070707] border-2 rounded-[10px] p-5 relative">
           <span class="iconify" data-icon="fluent:design-ideas-16-filled" data-width="40" data-height="40"></span>
-          <p class="box-text">Customizable Designs. Create a bio link that reflects your personal brand.</p>
+          <p class="box-text text-[#a7a7a7] mt-3 flex items-center gap-[5px]">Customizable Designs. Create a bio link that reflects your personal brand.</p>
         </div>
-        <div class="box">
+        <div class="box border-[#070707] border-2 rounded-[10px] p-5 relative">
           <span class="iconify" data-icon="material-symbols:wifi-protected-setup-rounded" data-width="40" data-height="40"></span>
-          <p class="box-text">Easy Setup. Get your bio link set up in minutes, with no technical skills required.</p>
+          <p class="box-text text-[#a7a7a7] mt-3 flex items-center gap-[5px]">Easy Setup. Get your bio link set up in minutes, with no technical skills required.</p>
         </div>
-        <div class="box">
+
+        <div class="box border-[#070707] border-2 rounded-[10px] p-5 relative">
           <span class="iconify" data-icon="majesticons:analytics-plus-line" data-width="40" data-height="40"></span>
-          <p class="box-text">Performance Analytics. Track how your bio links are performing with detailed insights.</p>
+          <p class="box-text text-[#a7a7a7] mt-3 flex items-center gap-[5px]">Performance Analytics. Track how your bio links are performing with detailed insights.</p>
         </div>
-        <div class="box">
+        <div class="box border-[#070707] border-2 rounded-[10px] p-5 relative">
           <span class="iconify" data-icon="fluent:link-12-regular" data-width="40" data-height="40"></span>
-          <p class="box-text">Unlimited Links. Create as many links as you need to manage your online presence.</p>
+          <p class="box-text text-[#a7a7a7] mt-3 flex items-center gap-[5px]">Unlimited Links. Create as many links as you need to manage your online presence.</p>
         </div>
-        <div class="box">
+        <div class="box border-[#070707] border-2 rounded-[10px] p-5 relative">
           <span class="iconify" data-icon="fluent:globe-24-regular" data-width="40" data-height="40"></span>
-          <p class="box-text">Custom Domains. Use your own domain for a personalized bio link.</p>
+          <p class="box-text text-[#a7a7a7] mt-3 flex items-center gap-[5px]">Custom Domains. Use your own domain for a personalized bio link.</p>
         </div>
-        <div class="box">
+        <div class="box border-[#070707] border-2 rounded-[10px] p-5 relative">
           <span class="iconify" data-icon="tabler:social" data-width="40" data-height="40"></span>
-          <p class="box-text">Social Media Integration. Easily link to all your social media profiles.</p>
+          <p class="box-text text-[#a7a7a7] mt-3 flex items-center gap-[5px]">Social Media Integration. Easily link to all your social media profiles.</p>
         </div>
       </div>
     </section>
