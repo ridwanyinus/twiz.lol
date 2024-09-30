@@ -35,3 +35,135 @@ body::-webkit-scrollbar {
   display: none;
   /* Chrome, Safari, Opera */
 }
+
+.btn {
+  transition: background-color 0.3s;
+}
+
+.promo-section h1 {
+  background-image: linear-gradient(93deg, rgba(255, 255, 255, 0.8) 0%, rgb(255, 255, 255) 43.2432%, rgba(255, 255, 255, 0) 140.921%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.promo-section h1 span {
+  background-image: linear-gradient(210deg, rgb(0 0 0 / 67%) -92.2927%, rgb(96 116 221) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.marquee-container {
+  background: linear-gradient(to bottom right, #22222200, rgb(96 116 221 / 11%));
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}
+
+.scroll {
+  animation: scroll 10s linear infinite;
+}
+
+.reverse {
+  animation-direction: reverse;
+}
+
+ .why-us {
+  background-image: linear-gradient(96deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 148.925%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.why-us-title {
+  background-image: linear-gradient(254deg, rgb(0 0 0) -92.2927%, rgb(186 186 186) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.why-us-description {
+  background-image: linear-gradient(210deg, rgb(0 0 0 / 67%) -92.2927%, rgb(96 116 221) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.box {
+  background: linear-gradient(to bottom right, #22222200, rgb(12 12 12 / 50%));
+}
+
+.box-text strong {
+  color: #007bff;
+}
+
+.pricing-box {
+  background: linear-gradient(to bottom right, #22222200, rgb(12 12 12 / 50%));
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+
+.features-box {
+  background: linear-gradient(to bottom right, #22222200, rgb(12 12 12 / 50%));
+}
+
+.features-grid li::before {
+  content: '✱';
+  color: #6074DD;
+  margin-right: 5px;
+}
+
+.call-to-action {
+    background: linear-gradient(to bottom right, #22222200, rgb(96 116 221 / 11%));
+}
+
+.cta-buttons .btn {
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.discord-btn:hover, .get-one-btn:hover {
+    box-shadow: 0px 0px 10px #6074DD;
+}
+
+.random-icon {
+    font-size: 2em;
+    color: #6074DD;
+    transform: rotate(0deg);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    cursor: pointer;
+}
+
+.random-icon:hover {
+    transform: rotate(15deg);
+    box-shadow: 0px 0px 15px #6074DD;
+}
+
+.random-icon:nth-child(1) {
+    transform: rotate(10deg);
+}
+
+.random-icon:nth-child(2) {
+    transform: rotate(-20deg);
+}
+
+.random-icon:nth-child(3) {
+    transform: rotate(15deg);
+}
+
+.random-icon:nth-child(4) {
+    transform: rotate(-10deg);
+}
+
+@keyframes iconRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
