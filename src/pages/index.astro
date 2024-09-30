@@ -1,176 +1,157 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- TODO: find out the reason prettier not working -->
+<!doctype html>
+<html lang='en'>
+  <head>
     <!-- TODO: CONVERT THE FONT TO LOCAL FONT-->
     <!-- TODO: convert all px to rem -->
     <!-- TODO: make the website responsive -->
     <!-- TODO: seperate functiobality into different files -->
     <!-- TODO: move all the data to diffrent files -->
     <!-- TODO: create a lib/content for all the contents avbove 5 and map. -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <title>Landing Page Header</title>
-    <link rel="stylesheet" href="/styles/global.css">
+    <link rel='stylesheet' href='/styles/global.css' />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-</head>
+    <link href='https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&display=swap' rel='stylesheet' />
+    <script src='https://code.iconify.design/2/2.1.0/iconify.min.js'></script>
+  </head>
 
-<body class='bg-[#000000] flex items-center flex-col  min-h-screen text-white'>
-    <header class="py-5 px-0 flex-center w-full mb-[30px] sticky top-0 z-[1000] site-header">
-      <div class="flex items-center justify-between w-[90%] max-w-[1130px] py-[10px] px-[30px] border border-[#151515] rounded-[20px] bg-[#1111116e] backdrop-blur gap-5 header-container">
-        <div class="logo">
-          <a href="#" class='text-xl font-bold text-white no-underline'>twiz.lol</a>
+  <body class='bg-[#000000] flex items-center flex-col min-h-screen text-white'>
+    <header class='py-5 px-0 flex-center w-full mb-[30px] sticky top-0 z-[1000] site-header'>
+      <div class='flex items-center justify-between w-[90%] max-w-[1130px] py-[10px] px-[30px] border border-[#151515] rounded-[20px] bg-[#1111116e] backdrop-blur gap-5 header-container'>
+        <div class='logo'>
+          <a href='#' class='text-xl font-bold text-white no-underline'>twiz.lol</a>
         </div>
-        <nav class="flex gap-[15px] nav-links">
-          <a href="#" class='text-white no-underline text-[0.9rem]'>Pricings</a>
-          <a href="#" class='no-underline text-white text-[0.9rem]'>Features</a>
-          <a href="#" class='no-underline text-white text-[0.9rem]'>Discord</a>
+        <nav class='gap-[15px] nav-links max-md:hidden'>
+          <a href='#' class='text-white no-underline text-[0.9rem]'>Pricings</a>
+          <a href='#' class='no-underline text-white text-[0.9rem]'>Features</a>
+          <a href='#' class='no-underline text-white text-[0.9rem]'>Discord</a>
         </nav>
-        <div class="flex gap-[10px] -mr-5 header-buttons">
-          <a href="#" class="py-2 px-[15px] no-underline font-[0.9rem] cursor-pointer transition-colors bg-transparent text-[#6074DD] border-[2px] border-[#91a3ff] hover:opacity-[0.8] btn login-btn">Login</a>
-          <a href="#" class="py-2 px-[15px] no-underline font-[0.9rem] cursor-pointer transistion-colors bg-[#6074DD] text-white border-[2px] border-[#91a3ff] hover:opacity-[0.8] btn signup-btn">Sign Up</a>
+        <div class='flex gap-[10px] -mr-5 header-buttons max-md:hidden'>
+          <a href='#' class='py-2 px-[15px] no-underline font-[0.9rem] cursor-pointer transition-colors bg-transparent text-[#6074DD] border-[2px] border-[#91a3ff] hover:opacity-[0.8] btn login-btn'
+            >Login</a
+          >
+          <a href='#' class='py-2 px-[15px] no-underline font-[0.9rem] cursor-pointer transistion-colors bg-[#6074DD] text-white border-[2px] border-[#91a3ff] hover:opacity-[0.8] btn signup-btn'
+            >Sign Up</a
+          >
         </div>
-        <div class="hamburger hidden cursor-pointer flex-col gap-[5px]" onclick="toggleMenu()">
-          <div class="w-6 h-[3px] bg-[#6074dd]"></div>
-          <div class="w-6 h-[3px] bg-[#6074dd]"></div>
-          <div class="w-6 h-[3px] bg-[#6074dd]"></div>
+        <div class='hamburger hidden max-md:flex cursor-pointer flex-col gap-[5px]' onclick='toggleMenu()'>
+          <div class='w-6 h-[3px] bg-[#6074dd]'></div>
+          <div class='w-6 h-[3px] bg-[#6074dd]'></div>
+          <div class='w-6 h-[3px] bg-[#6074dd]'></div>
         </div>
       </div>
     </header>
 
-    <section class="promo-section w-[90%] max-w-[1130px] relative text-white mt-[157px] mx-auto mb-[310px]">
-      <h1 class='text-5xl font-light text-transparent line-height-[1.2rem] text-left mb-5 max-width-[600px]'>
-        Your bio link tool, <br /><span class='font-medium text-transparent '>streamlined and simple.</span>
+    <section class='promo-section w-[90%] max-w-[1130px] relative text-white mt-[157px] mx-auto mb-[310px] max-md:p-5 text-center'>
+      <h1 class='text-2xl md:text-[1.8rem] leading-[1.2em] md:text-5xl font-light text-transparent line-height-[1.2rem] text-left mb-5 max-width-[600px]'>
+        Your bio link tool, <br /><span class='md:font-medium text-transparent font-semibold max-md:inline-block mt-[10px]'>streamlined and simple.</span>
       </h1>
-      <p class="text-[1.1rem] color-[#a7a7a7] mb-10  max-w-[600px] text-left">
-        Create and manage professional bio links.
-      </p>
+      <p class='text-[0.9rem] md:text-base max-md:leading-[1.5em] mb-5 md:text-[1.1rem] color-[#a7a7a7] md:mb-10 max-w-[600px] text-left'>Create and manage professional bio links.</p>
       <div>
-        <a href="#" class="btn py-4 px-10 text-base rounded-[30px] mr-[15px]  explore-links bg-transparent border-2 border-[#36373a]">EXPLORE LINKS</a>
-        <a href="#" class="btn py-4 px-10 text-base rounded-[30px] mr-[15px]  get-started bg-[#6074DD] border-2 border-[#91a3ff] text-white">GET STARTED</a>
+        <a
+          href='#'
+          class='btn py-[10px] px-5 text-[0.7rem] md:text-[0.8rem] mr-[5px] max-md:w-auto max-md:inline-block md:py-4 md:px-10 md:text-base rounded-[30px] lg:mr-[15px] explore-links bg-transparent border-2 border-[#36373a]'
+          >EXPLORE LINKS</a
+        >
+        <a
+          href='#'
+          class='btn text-[0.7rem] py-[10px] px-5 md:text-[0.8rem] mr-[5px] max-md:w-auto max-md:inline-block md:py-4 md:px-10 md:text-base rounded-[30px] lg:mr-[15px] get-started bg-[#6074DD] border-2 border-[#91a3ff] text-white'
+          >GET STARTED</a
+        >
       </div>
 
-      <div class="rating absolute -bottom-5    right-0 flex items-center">
-        <div class="rating-number text-5xl text-[#6074DD] mr-5 font-bold">4.8/5</div>
-        <div class="rating-wrapper flex flex-col items-start">
-          <div class="rating-stars flex text-[#ffd700] text-2xl gap-4 mb-1">
+      <div class='rating relative max-md:mt-5 max-md:text-center md:absolute -bottom-5 right-0 flex items-center'>
+        <div class='rating-number text-2xl md:text-[2rem] lg:text-5xl text-[#6074DD] mr-[15px] md:mr-5 font-bold'>4.8/5</div>
+        <div class='rating-wrapper flex flex-col items-start'>
+          <div class='rating-stars max-md:justify-center flex text-[#ffd700] text-[1.2rem] md:text-2xl gap-4 mb-1'>
             <span>★</span>
             <span>★</span>
             <span>★</span>
             <span>★</span>
             <span>★</span>
           </div>
-          <div class="rating-text text-[#6074DD] text-base">Rated by top agencies</div>
+          <div class='rating-text text-[#6074DD] text-base'>Rated by top agencies</div>
         </div>
       </div>
     </section>
 
-    <div class="marquee-container w-full overflow-hidden relative py-[10px] px-0 border-2 border-[#0c0e1b] rounded-[15px] max-w-[1130px] mt-10">
-      <div class="marquee-content scroll flex gap-[30px] py-[10px] px-5 w-fit whitespace-nowrap">
-        <div class="marquee-item flex items-center gap-[10px] text-[1.1rem] text-[#a7a7a7]">
-          <span
-            class="iconify"
-            data-icon="fluent:link-12-regular"
-            data-width="24"
-            data-height="24"
-          ></span>
+    <div class='marquee-container w-full overflow-hidden relative py-[10px] px-0 border-2 border-[#0c0e1b] rounded-[15px] max-w-[1130px] mt-10'>
+      <div class='marquee-content scroll flex gap-[30px] py-[10px] px-5 w-fit whitespace-nowrap'>
+        <div class='marquee-item flex items-center gap-[10px] text-[1.1rem] text-[#a7a7a7]'>
+          <span class='iconify' data-icon='fluent:link-12-regular' data-width='24' data-height='24'></span>
           Easy Bio Links
         </div>
-        <div class="marquee-item flex items-center gap-[10px] text-[1.1rem] text-[#a7a7a7]">
-          <span
-            class="iconify"
-            data-icon="fluent:data-pie-24-filled"
-            data-width="24"
-            data-height="24"
-          ></span>
+        <div class='marquee-item flex items-center gap-[10px] text-[1.1rem] text-[#a7a7a7]'>
+          <span class='iconify' data-icon='fluent:data-pie-24-filled' data-width='24' data-height='24'></span>
           Advanced Analytics
         </div>
-        <div class="marquee-item flex items-center gap-[10px] text-[1.1rem] text-[#a7a7a7]">
-          <span
-            class="iconify"
-            data-icon="carbon:link"
-            data-width="24"
-            data-height="24"
-          ></span>
+        <div class='marquee-item flex items-center gap-[10px] text-[1.1rem] text-[#a7a7a7]'>
+          <span class='iconify' data-icon='carbon:link' data-width='24' data-height='24'></span>
           Unlimited Links
         </div>
-        <div class="marquee-item flex items-center gap-[10px] text-[1.1rem] text-[#a7a7a7]">
-          <span
-            class="iconify"
-            data-icon="fa-solid:globe"
-            data-width="24"
-            data-height="24"
-          ></span>
+        <div class='marquee-item flex items-center gap-[10px] text-[1.1rem] text-[#a7a7a7]'>
+          <span class='iconify' data-icon='fa-solid:globe' data-width='24' data-height='24'></span>
           Custom Domains
         </div>
-        <div class="marquee-item flex items-center gap-[10px] text-[1.1rem] text-[#a7a7a7]">
-          <span
-            class="iconify"
-            data-icon="mdi:social-shatabler:socialre"
-            data-width="24"
-            data-height="24"
-          ></span>
+        <div class='marquee-item flex items-center gap-[10px] text-[1.1rem] text-[#a7a7a7]'>
+          <span class='iconify' data-icon='mdi:social-shatabler:socialre' data-width='24' data-height='24'></span>
           Social Media Integration
         </div>
       </div>
     </div>
 
-    <section class="why-us w-[90%] max-w-[1130px] my-10 mx-auto text-left text-[#6074dd]">
-      <div class="why-us-container flex justify-between items-center mb-[30px]">
-        <h2 class="why-us-title text-[2rem] font-semibold text-transparent">Why Us?</h2>
-        <p class="why-us-description text-[1.1rem] text-transparent">We'll Give You Reasons</p>
+    <section class='why-us w-[90%] max-w-[1130px] my-10 mx-auto text-left text-[#6074dd]'>
+      <div class='why-us-container flex justify-between items-center mb-[30px]'>
+        <h2 class='why-us-title text-[2rem] font-semibold text-transparent'>Why Us?</h2>
+        <p class='why-us-description text-[1.1rem] text-transparent'>We'll Give You Reasons</p>
       </div>
 
-      <div class="boxes-container grid grid-cols-3 gap-5">
-        <div class="box border-[#070707] border-2 rounded-[10px] p-5 relative">
-          <span class="iconify" data-icon="fluent:design-ideas-16-filled" data-width="40" data-height="40"></span>
-          <p class="box-text text-[#a7a7a7] mt-3 flex items-center gap-[5px]">Customizable Designs. Create a bio link that reflects your personal brand.</p>
+      <div class='boxes-container grid md:grid-cols-3 gap-5'>
+        <div class='box border-[#070707] border-2 rounded-[10px] p-5 relative'>
+          <span class='iconify' data-icon='fluent:design-ideas-16-filled' data-width='40' data-height='40'></span>
+          <p class='text-[0.9rem] sm:text-base text-[#a7a7a7] mt-3 flex items-center gap-[5px]'>Customizable Designs. Create a bio link that reflects your personal brand.</p>
         </div>
-        <div class="box border-[#070707] border-2 rounded-[10px] p-5 relative">
-          <span class="iconify" data-icon="material-symbols:wifi-protected-setup-rounded" data-width="40" data-height="40"></span>
-          <p class="box-text text-[#a7a7a7] mt-3 flex items-center gap-[5px]">Easy Setup. Get your bio link set up in minutes, with no technical skills required.</p>
+        <div class='box border-[#070707] border-2 rounded-[10px] p-5 relative'>
+          <span class='iconify' data-icon='material-symbols:wifi-protected-setup-rounded' data-width='40' data-height='40'></span>
+          <p class='box-text text-[#a7a7a7] mt-3 flex items-center gap-[5px]'>Easy Setup. Get your bio link set up in minutes, with no technical skills required.</p>
         </div>
 
-        <div class="box border-[#070707] border-2 rounded-[10px] p-5 relative">
-          <span class="iconify" data-icon="majesticons:analytics-plus-line" data-width="40" data-height="40"></span>
-          <p class="box-text text-[#a7a7a7] mt-3 flex items-center gap-[5px]">Performance Analytics. Track how your bio links are performing with detailed insights.</p>
+        <div class='box border-[#070707] border-2 rounded-[10px] p-5 relative'>
+          <span class='iconify' data-icon='majesticons:analytics-plus-line' data-width='40' data-height='40'></span>
+          <p class='box-text text-[#a7a7a7] mt-3 flex items-center gap-[5px]'>Performance Analytics. Track how your bio links are performing with detailed insights.</p>
         </div>
-        <div class="box border-[#070707] border-2 rounded-[10px] p-5 relative">
-          <span class="iconify" data-icon="fluent:link-12-regular" data-width="40" data-height="40"></span>
-          <p class="box-text text-[#a7a7a7] mt-3 flex items-center gap-[5px]">Unlimited Links. Create as many links as you need to manage your online presence.</p>
+        <div class='box border-[#070707] border-2 rounded-[10px] p-5 relative'>
+          <span class='iconify' data-icon='fluent:link-12-regular' data-width='40' data-height='40'></span>
+          <p class='box-text text-[#a7a7a7] mt-3 flex items-center gap-[5px]'>Unlimited Links. Create as many links as you need to manage your online presence.</p>
         </div>
-        <div class="box border-[#070707] border-2 rounded-[10px] p-5 relative">
-          <span class="iconify" data-icon="fluent:globe-24-regular" data-width="40" data-height="40"></span>
-          <p class="box-text text-[#a7a7a7] mt-3 flex items-center gap-[5px]">Custom Domains. Use your own domain for a personalized bio link.</p>
+        <div class='box border-[#070707] border-2 rounded-[10px] p-5 relative'>
+          <span class='iconify' data-icon='fluent:globe-24-regular' data-width='40' data-height='40'></span>
+          <p class='box-text text-[#a7a7a7] mt-3 flex items-center gap-[5px]'>Custom Domains. Use your own domain for a personalized bio link.</p>
         </div>
-        <div class="box border-[#070707] border-2 rounded-[10px] p-5 relative">
-          <span class="iconify" data-icon="tabler:social" data-width="40" data-height="40"></span>
-          <p class="box-text text-[#a7a7a7] mt-3 flex items-center gap-[5px]">Social Media Integration. Easily link to all your social media profiles.</p>
+        <div class='box border-[#070707] border-2 rounded-[10px] p-5 relative'>
+          <span class='iconify' data-icon='tabler:social' data-width='40' data-height='40'></span>
+          <p class='box-text text-[#a7a7a7] mt-3 flex items-center gap-[5px]'>Social Media Integration. Easily link to all your social media profiles.</p>
         </div>
       </div>
     </section>
 
-    <section class="why-us w-[90%] max-w-[1130px] my-10 mx-auto text-left text-[#6074dd]">
-      <div class="why-us-container flex justify-between items-center mb-[30px]">
-        <h2 class="why-us-title text-[2rem] font-semibold text-transparent">Pricing?</h2>
-        <p class="why-us-description text-[1.1rem] text-transparent">Our Plans Includes!</p>
+    <section class='why-us w-[90%] max-w-[1130px] my-10 mx-auto text-left text-[#6074dd]'>
+      <div class='why-us-container flex flex-col max-md:items-start md:flex-row justify-between items-center mb-[30px]'>
+        <h2 class='why-us-title text-2xl md:text-[2rem] font-semibold text-transparent'>Pricing?</h2>
+        <p class='why-us-description text-base md:text-[1.1rem] text-transparent'>Our Plans Includes!</p>
       </div>
 
-      <section class="pricing-section w-[90%] max-w-[1130px] my-[50px] mx-auto p-[30px] bg-black rounded-[20px] text-white text-center">
-        <div class="pricing-container flex justify-between mb-[30px] ">
-          <div class="pricing-box w-[37%] rounded-[10px] p-[22.2px] border-2 border-[#070707]">
-            <h3 class="text-[1.2rem] font-bold mb-[10px] text-white">Starter</h3>
-            <div class="price text-xl font-bold text-[#6074dd]">$0/Lifetime</div>
+      <section class='pricing-section w-[90%] max-w-[1130px] my-[50px] mx-auto p-[30px] bg-black rounded-[20px] text-white text-center'>
+        <div class='pricing-container flex justify-between mb-[30px]'>
+          <div class='pricing-box w-[37%] rounded-[10px] p-[22.2px] border-2 border-[#070707]'>
+            <h3 class='text-[1.2rem] font-bold mb-[10px] text-white'>Starter</h3>
+            <div class='price text-xl font-bold text-[#6074dd]'>$0/Lifetime</div>
             <p>Free forever, perfect for personal use</p>
           </div>
-          <div class="features-box p-5 w-[61%] border-2 border-[#070707] rounded-[10px]">
-            <ul class="features-list list-none p-0 m-0 text-white text-base grid grid-cols-3 gap-5">
-              <li class='flex items-center'>Customizable Biolink</li>
+          <div class='features-box p-5 w-full mt-[17px] md:w-[61%] border-2 border-[#070707] rounded-[10px]'>
+            <ul class='features-list list-none p-0 m-0 text-white text-base grid md:grid-cols-3 gap-5'>
+              <li class='flex items-center text-[0.9rem] sm:text-base'>Customizable Biolink</li>
               <li class='flex items-center'>Default Theme</li>
               <li class='flex items-center'>Basic Customization Options</li>
               <li class='flex items-center'>Basic Analytics</li>
@@ -181,15 +162,15 @@
         </div>
       </section>
 
-      <section class="pricing-section w-[90%] max-w-[1130px] my-[50px] mx-auto p-[30px] bg-black rounded-[20px] text-white text-center">
-        <div class="pricing-container flex justify-between mb-[30px]">
-          <div class="pricing-box w-[37%] rounded-[10px] p-[22.2px] border-2 border-[#070707]">
-            <h3 class="text-[1.2rem] font-bold mb-[10px] text-white">Premium</h3>
-            <div class="price text-[2rem] font-bold text-[#6074DD]">$4/Lifetime</div>
+      <section class='pricing-section w-[90%] max-w-[1130px] my-[50px] mx-auto p-[30px] bg-black rounded-[20px] text-white text-center'>
+        <div class='pricing-container flex justify-between mb-[30px]'>
+          <div class='pricing-box w-full md:w-[37%] rounded-[10px] p-[22.2px] border-2 border-[#070707]'>
+            <h3 class='text-[1.2rem] font-bold mb-[10px] text-white'>Premium</h3>
+            <div class='price text-[17px] md:text-[2rem] font-bold text-[#6074DD]'>$4/Lifetime</div>
             <p>Upgrade for advanced features</p>
           </div>
-          <div class="features-box flex-2 bg-[#151515] p-[30px] rounded-[15px] grid gap-5">
-            <ul class="features-list list-none p-0 m-0 text-white text-base grid grid-cols-3 gap-5">
+          <div class='features-box flex-2 bg-[#151515] p-[30px] rounded-[15px] grid gap-5'>
+            <ul class='features-list list-none p-0 m-0 text-white text-base grid grid-cols-3 gap-5'>
               <li class='flex items-center'>Advanced Features</li>
               <li class='flex items-center'>Advanced Themes</li>
               <li class='flex items-center'>Custom Domains</li>
@@ -201,36 +182,35 @@
         </div>
       </section>
 
-    <section class="call-to-action w-full max-w-[1130px] my-[50px] mx-auto p-[30px] border-2 border-[#0c0e1b] flex justify-between items-center gap-5 relative overflow-hidden rounded-[20px]">
-      <div class="cta-container">
-          <div class="cta-left flex-1 text-left">
-              <h2 class="cta-title text-[2rem] font-bold text-white">Join Our Community</h2>
-              <p class="cta-description text-[1.1rem]mb-5 text-[#a7a7a7]">Connect with like-minded individuals, explore exclusive content, and get early access to new features!</p>
-              <div class="cta-buttons flex gap-[15px]">
-                  <a href="#" class="btn py-[10px] px-[25px] rounded-[30px] text-base flex gap-[10px] items-center discord-btn bg[#7289DA] text-white border-[2px] border-[#91a3ff]">
-                      <span class="iconify" data-icon="fa-brands:discord" data-width="20" data-height="20"></span> Discord
-                  </a>
-                  <a href="#" class="btn py-[10px] px-[25px] rounded-[30px] text-base flex gap-[10px] items-center get-one-btn bg-[#6074DD] text-white border-[2px] border-[#91a3ff]">
-                      <span class="iconify" data-icon="mdi:link" data-width="20" data-height="20"></span> Get One
-                  </a>
-              </div>
+      <section class='call-to-action w-full max-w-[1130px] my-[50px] mx-auto p-[30px] border-2 border-[#0c0e1b] flex justify-between items-center gap-5 relative overflow-hidden rounded-[20px]'>
+        <div class='cta-container'>
+          <div class='cta-left flex-1 text-left'>
+            <h2 class='cta-title text-[2rem] font-bold text-white'>Join Our Community</h2>
+            <p class='cta-description text-[1.1rem]mb-5 text-[#a7a7a7]'>Connect with like-minded individuals, explore exclusive content, and get early access to new features!</p>
+            <div class='cta-buttons flex gap-[15px]'>
+              <a href='#' class='btn py-[10px] px-[25px] rounded-[30px] text-base flex gap-[10px] items-center discord-btn bg[#7289DA] text-white border-[2px] border-[#91a3ff]'>
+                <span class='iconify' data-icon='fa-brands:discord' data-width='20' data-height='20'></span> Discord
+              </a>
+              <a href='#' class='btn py-[10px] px-[25px] rounded-[30px] text-base flex gap-[10px] items-center get-one-btn bg-[#6074DD] text-white border-[2px] border-[#91a3ff]'>
+                <span class='iconify' data-icon='mdi:link' data-width='20' data-height='20'></span> Get One
+              </a>
+            </div>
           </div>
-          <div class="cta-right flex-1 flex justify-end gap-5 relative ">
-              <span class="random-icon" data-icon="mdi:home" data-width="40" data-height="40"></span>
-              <span class="random-icon" data-icon="fa-solid:star" data-width="40" data-height="40"></span>
-              <span class="random-icon" data-icon="mdi:check-circle" data-width="40" data-height="40"></span>
-              <span class="random-icon" data-icon="fa-brands:github" data-width="40" data-height="40"></span>
+          <div class='cta-right flex-1 flex justify-end gap-5 relative'>
+            <span class='random-icon' data-icon='mdi:home' data-width='40' data-height='40'></span>
+            <span class='random-icon' data-icon='fa-solid:star' data-width='40' data-height='40'></span>
+            <span class='random-icon' data-icon='mdi:check-circle' data-width='40' data-height='40'></span>
+            <span class='random-icon' data-icon='fa-brands:github' data-width='40' data-height='40'></span>
           </div>
-      </div>
-  </section>
+        </div>
+      </section>
 
-
-
-    <script>
-      function toggleMenu() {
-        const navLinks = document.querySelector('.nav-links');
-        navLinks.classList.toggle('visible');
-      }
-    </script>
-</body>
+      <script>
+        function toggleMenu() {
+          const navLinks = document.querySelector('.nav-links');
+          navLinks.classList.toggle('visible');
+        }
+      </script>
+    </section>
+  </body>
 </html>
