@@ -1,0 +1,21 @@
+---
+import { whyUsData } from '../../lib/content/whyUs';
+---
+
+<section class='why-us w-[90%] max-w-[1130px] my-10 mx-auto text-left text-[#6074dd]'>
+  <div class='why-us-container flex justify-between items-center mb-[30px]'>
+    <h2 class='why-us-title text-[2rem] font-semibold text-transparent'>Why Us?</h2>
+    <p class='why-us-description text-[1.1rem] text-transparent'>We'll Give You Reasons</p>
+  </div>
+
+  <div class='boxes-container grid md:grid-cols-3 gap-5'>
+    {
+      whyUsData.map((data) => (
+        <div class='box border-[#070707] border-2 rounded-[10px] p-5 relative'>
+          <span class='iconify' data-icon={data.icon} data-width='40' data-height='40' />
+          <p class={`${data.style}`}>{data.name}</p>
+        </div>
+      ))
+    }
+  </div>
+</section>
